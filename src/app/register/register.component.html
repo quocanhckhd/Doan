@@ -1,0 +1,29 @@
+<div class="center">
+  <form id="register" [formGroup]="registerForm">
+    <div id="p">
+      <p>ĐĂNG KÝ</p>
+    </div>
+    <div class="txt_field">
+      <input type="text" placeholder="Họ và tên">
+      <span></span>
+    </div>
+    <div class="txt_field">
+      <input type="text" placeholder="Email">
+      <span></span>
+    </div>
+    <div class="txt_field">
+      <input type="text" placeholder="Tên đăng nhập">
+      <span></span>
+    </div>
+    <div class="txt_field">
+      <input type="password" placeholder="Mật khẩu">
+      <span></span>
+    </div>
+    <div class="txt_field">
+      <input type="password" placeholder="Nhập lại mật khẩu">
+      <span></span>
+    </div>
+    <input type="submit" value="Đăng ký">
+    <input [routerLink]="['/login']" type="submit" value="Trở về">
+  </form>
+</div>

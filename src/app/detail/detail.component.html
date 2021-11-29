@@ -1,0 +1,35 @@
+<div id="block">
+    <app-taskbar></app-taskbar>
+</div>
+<div id="block">
+    <div class="table">
+        <h1>Danh sách giao dịch</h1>
+        <table cellspacing="0" cellpadding="5" border="1">
+            <tr>
+                <td>Mã giao dịch</td>
+                <td>Tên giao dịch</td>
+                <td>Danh mục</td>
+                <td>Ngày</td>
+                <td>Giá tiền</td>
+                <td>Ghi chú</td>
+                <td>Trạng thái</td>
+            </tr>
+            <tr *ngFor="let detail of details">
+                <td>{{detail.id_detail}}</td>
+                <td>{{detail.detail}}</td>
+                <td>{{detail.category}}</td>
+                <td>{{detail.date}}</td>
+                <td>{{detail.price}}</td>
+                <td>{{detail.note}}</td>
+                <td>
+                    <span *ngIf="detail.status==0">Thu</span>
+                    <span *ngIf="detail.status==1">Chi</span>
+                </td>
+                <td>
+                    <button>X</button>
+                </td>
+            </tr>
+        </table>
+        
+    </div>
+</div>

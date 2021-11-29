@@ -1,0 +1,39 @@
+<div id="body">
+  <div class="block">
+    <app-taskbar></app-taskbar>
+  </div>
+  <div class="block">
+    <div class="income">
+      <p>Thu nhập</p>
+      <form class="body-form" [formGroup]="newForm" (ngSubmit)="onSubmit()">
+        <div class="txt_field">
+          <input type="text" formControlName="detail" placeholder="Tên giao dịch">
+          <span></span>
+        </div>
+        <div class="txt_field">
+          <input type="date" formControlName="date" placeholder="Ngày">
+          <span></span>
+        </div>
+        <div class="txt_field">
+          <select formControlName="category" placeholder="Danh mục">
+            <option value="" selected disabled>Danh mục</option>
+            <option value="lương">Lương</option>
+            <option value="thưởng">Thưởng</option>
+          </select>
+          <span></span>
+        </div>
+        <div class="txt_field">
+          <input type="text" formControlName="price" class="txtPrice" placeholder="Giá tiền" [appFormatFields]="CURRENCY" (change)="onChangeReactiveForm('price')">
+        </div>
+        <div class="txt_field">
+          <textarea formControlName="note" placeholder="Ghi chú"></textarea>
+        </div>
+        
+        <div>{{message}}</div>
+        <button type="submit">Xác nhận</button><button [routerLink]="['/index']">Hủy</button>
+      </form>
+
+    </div>
+  </div>
+
+</div>

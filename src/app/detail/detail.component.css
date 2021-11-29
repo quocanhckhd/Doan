@@ -1,0 +1,15 @@
+.block{
+    display: inline;
+    
+}
+.table{
+    background-color: white;
+    margin-top: -405px;
+    margin-left: 420px;
+    margin-right: 250px;
+    
+}
+
+.table h1{
+    text-align: center;
+}

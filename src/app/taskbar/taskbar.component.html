@@ -1,0 +1,15 @@
+<div id="body">
+    <div class="taskbar">
+        <div class="welcome">
+            Xin chào,
+            <label id="user">{{user}}</label><br />
+            <button (click)="logout()">Đăng xuất</button>
+        </div>
+        <div class="category">
+            <input [routerLink]="['/detail']" type="submit" value="Giao dịch">
+            <input [routerLink]="['/income']" type="submit" value="Thu nhập">
+            <input [routerLink]="['/spend']" type="submit" value="Chi tiêu">
+            <input type="submit" value="Thống kê">
+        </div> 
+</div>
+
