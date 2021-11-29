@@ -6,10 +6,31 @@
             <button (click)="logout()">Đăng xuất</button>
         </div>
         <div class="category">
-            <input [routerLink]="['/detail']" type="submit" value="Giao dịch">
-            <input [routerLink]="['/income']" type="submit" value="Thu nhập">
-            <input [routerLink]="['/spend']" type="submit" value="Chi tiêu">
-            <input type="submit" value="Thống kê">
+            <a href="#" class="button" [routerLink]="['/detail']" >
+                <span class="button-icon" >
+                    <i class="fas fa-info-circle"></i>
+                </span>
+                <span class="button-text">Giao dịch</span>
+            </a>
+            <a href="#" class="button" [routerLink]="['/income']" >
+                <span class="button-icon" >
+                    <i class="fas fa-coins"></i>
+                </span>
+                <span class="button-text">Thu nhập</span>
+            </a>
+            <a href="#" class="button" [routerLink]="['/spend']" >
+                <span class="button-icon" >
+                    <i class="fas fa-comment-dollar"></i>
+                    <!-- <i class="fas fa-wallet"></i> -->
+                </span>
+                <span class="button-text">Chi tiêu</span>
+            </a>
+            <a  class="button">
+                <span class="button-icon" >
+                    <i class="fas fa-wallet"></i>
+                </span>
+                <span class="button-text">Thống kê</span>
+            </a>
+            
         </div> 
 </div>
-

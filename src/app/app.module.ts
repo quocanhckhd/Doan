@@ -34,6 +34,7 @@ const appRoutes: Routes = [
     SpendComponent,
     DetailComponent,
     TaskbarComponent,
+    
 
   ],
   imports: [
