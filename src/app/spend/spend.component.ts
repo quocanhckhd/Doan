@@ -18,7 +18,7 @@ export class SpendComponent implements OnInit {
     category: [''],
     price: [''],
     note: [''],
-    username: [''],
+    username: [this.authService.getLoggedInUserName()],
   });
   constructor(private fb: FormBuilder, private dataService: DataService, private router: Router, private authService: AuthService) { }
   message: string;

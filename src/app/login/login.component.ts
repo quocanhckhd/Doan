@@ -18,6 +18,7 @@ export class LoginComponent implements OnInit {
   invalidLogin = false;
   loginSuccess = false;
   username="";
+  id="";
   ngOnInit(): void {
   }
   login() {
@@ -32,6 +33,7 @@ export class LoginComponent implements OnInit {
     this.authService.username=this.loginForm.value.username;
     this.authService.password=this.loginForm.value.password;
     this.authService.registerSuccessfulLogin(this.loginForm.value.username)
+    
     this.router.navigate(['/index']);
     }
     }, () => {

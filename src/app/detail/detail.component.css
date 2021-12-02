@@ -1,15 +1,20 @@
 .block{
-    display: inline;
-    
+    display:inline-block;
+    position: relative;
 }
 .table{
+    height: 450px;
     background-color: white;
-    margin-top: -405px;
+    margin-top: -330px;
     margin-left: 420px;
     margin-right: 250px;
+    overflow-y: scroll;
     
 }
 
-.table h1{
-    text-align: center;
+.h1{
+    position: relative;
+   margin-left: 560px;
+   top: -330px
+    
 }

@@ -7,6 +7,7 @@ import { map } from 'rxjs/operators';
 export class AuthService {
   BASE_PATH= 'http://localhost:8080'
   USER_NAME_SESSION = 'username_session'
+  ID_USER='id_user'
   public username: String;
   public password: String;
   constructor(private http: HttpClient) { }

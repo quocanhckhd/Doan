@@ -19,4 +19,9 @@ export class TaskbarComponent implements OnInit {
     this.authService.logout();
     this.router.navigate(['/login']);
   }
+  id:any;
+  tabChange(ids:any){
+     this.id=ids;
+     this.router.navigate(['/'+this.id])
+  }
 }
