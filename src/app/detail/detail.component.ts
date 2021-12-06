@@ -18,4 +18,5 @@ export class DetailComponent implements OnInit {
     this.dataService.getListDetail(this.username)
     .subscribe((data: Array<Detail>) => this.details = data)
     }
+    
 }

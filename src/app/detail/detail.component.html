@@ -20,15 +20,19 @@
                 <td>{{detail.id_detail}}</td>
                 <td>{{detail.detail}}</td>
                 <td>{{detail.category}}</td>
-                <td>{{detail.date}}</td>
-                <td>{{detail.price}}</td>
+                <td>{{detail.date|date:'dd/MM/yyyy'}}</td>
+                <td>{{detail.price|currency:"VND"}}</td>
                 <td>{{detail.note}}</td>
                 <td>
                     <span *ngIf="detail.status==0">Thu</span>
                     <span *ngIf="detail.status==1">Chi</span>
                 </td>
-                <td>
-                    <button>X</button>
+                <td class="button">
+                    <a >
+                        <span>
+                            <i class="fas fa-trash-alt"></i>
+                        </span>
+                    </a>
                 </td>
             </tr>
         </table>

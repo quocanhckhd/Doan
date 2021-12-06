@@ -1,28 +1,25 @@
 <div class="center">
-  <form id="register" [formGroup]="registerForm">
+  <form id="register" [formGroup]="registerForm" (ngSubmit)=register()>
     <div id="p">
       <p>ĐĂNG KÝ</p>
     </div>
     <div class="txt_field">
-      <input type="text" placeholder="Họ và tên">
+      <input type="text" formControlName="fullname" placeholder="Họ và tên">
       <span></span>
     </div>
     <div class="txt_field">
-      <input type="text" placeholder="Email">
+      <input type="text" formControlName="phonenumber" placeholder="SĐT">
       <span></span>
     </div>
     <div class="txt_field">
-      <input type="text" placeholder="Tên đăng nhập">
+      <input type="text" formControlName="username" placeholder="Tên đăng nhập">
       <span></span>
     </div>
     <div class="txt_field">
-      <input type="password" placeholder="Mật khẩu">
+      <input type="password" formControlName="password" placeholder="Mật khẩu">
       <span></span>
     </div>
-    <div class="txt_field">
-      <input type="password" placeholder="Nhập lại mật khẩu">
-      <span></span>
-    </div>
+    <div>{{message}}</div>
     <input type="submit" value="Đăng ký">
     <input [routerLink]="['/login']" type="submit" value="Trở về">
   </form>

@@ -18,10 +18,8 @@ export class AuthService {
     return this.http.post<Response>(this.BASE_PATH+"/auth/login",params,{
     observe: 'response' });
     }
-    register(user: String, pass: String){
-    return
-    this.http.post<Response>(this.BASE_PATH+"/auth/register",{username:user,password:
-    pass},{ observe: 'response' });
+    register(user: String, pass: String,fullname:String,phonenumber: number,role:String){
+    return this.http.post<Response>(this.BASE_PATH+"/auth/register",{username:user,password:pass,fullname:fullname,phonenumber:phonenumber,role:role},{ observe: 'response' });
     }
     createBasicAuthToken() {
     console.log(this.username + ":" + this.password);

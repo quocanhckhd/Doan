@@ -18,3 +18,11 @@
    top: -330px
     
 }
+.button{
+    background-color: royalblue
+    
+}
+.button:hover{
+    color: white;
+    cursor: pointer;
+} 

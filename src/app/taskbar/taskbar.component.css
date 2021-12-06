@@ -39,6 +39,8 @@
 }
 #user{
     color:floralwhite;
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .category{
@@ -101,4 +103,12 @@ a.button.active{
 } 
 .color{
     color: white!important;
+}
+.money{
+    position: absolute;
+    width: 200px;
+    top: 180px;
+    left: 220px;
+    font-size: 20px;
+    font-family: sans-serif;
 }
