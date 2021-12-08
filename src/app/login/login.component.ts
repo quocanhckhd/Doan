@@ -30,6 +30,10 @@ export class LoginComponent implements OnInit {
     this.invalidLogin = false;
     this.loginSuccess = true;
     this.successMessage = 'Login Successful.';
+      localStorage.setItem('userId', response.body['id_user']);
+      // const userId = localStorage.getItem('userId');
+    // localStorage.setItem('user', JSON.stringify(response.body)); // nếu cần lấy toàn bộ thông tin user 
+    // const user = localStorage.getItem('user');
     this.authService.username=this.loginForm.value.username;
     this.authService.password=this.loginForm.value.password;
     this.authService.registerSuccessfulLogin(this.loginForm.value.username)
